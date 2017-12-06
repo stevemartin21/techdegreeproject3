@@ -27,7 +27,6 @@
     padding:20px 20px 40px 20px;
     margin:10px auto;
     border-bottom: solid black 8px;
-    border-width: 90%;
    
 }
 
@@ -64,8 +63,8 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
-    background: gray;
+    resize: vertical; 
+    
 }
 input[type="email"]{
     width: 100%; 
@@ -79,7 +78,7 @@ input[type="email"]{
     
 }
 
-input[type=phone]{
+input[type=tel]{
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -87,8 +86,8 @@ input[type=phone]{
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
-    background: gray;
+    resize: vertical;
+   
 }
 
 input[placeholder] {
@@ -112,10 +111,10 @@ input[type=email]:focus{
     background-color:lightblue;
 }
 
-input[type=phone]{
+input[type=tel]{
      background-color: #F0F0F0;
 }
-input[type=phone]:focus{
+input[type=tel]:focus{
     background-color:lightblue;
 }
 
@@ -182,8 +181,8 @@ input[type=submit] {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
-    background: gray;
+    resize: vertical; 
+    
     float:right;
     
 }
@@ -201,7 +200,7 @@ input[type="email"]{
     
 }
 
-input[type=phone]{
+input[type=tel]{
     width: 80%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -209,8 +208,8 @@ input[type=phone]{
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical 
-    background: gray;
+    resize: vertical;
+    
     float:right;
 }
 
