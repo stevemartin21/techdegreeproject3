@@ -2,123 +2,111 @@
 <html>
 <head>
   <title>Newsletter Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
 <body>
 
 <div id="codeReview">
-
     <h1>THE CODE REVIEW</h1>
-
-
 </div>
 
 <div class="container">
-
           <div id="intro">
-
                 <h2>Signup for our newsletter</h2>
                 <h3>Get the latest news on how your code is doing right to your inbox</h3>
+          </div>
 
+          <!-- Contact Information Secion -->
+    <form>
+      <fieldset>
+        <legend> Contact Information</legend>
+
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="name" placeholder="Required" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Required" required>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+          <label for="state">State</label>
+
+          <select id="state" name="states">
+              <option value=""  disabled hidden>Choose State.</option>
+              <option value="Utah">Utah</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Wyoming">Wyoming</option>
+          </select>
+
+          <label for="zip">Zip Code</label><br>
+          <input type="text" id="zip" name="zip">
+
+    </fieldset>
+
+<!--Newsletter Secion -->
+
+
+     <fieldset>
+        <legend>Newsletter</legend>
+          <div id="newsletter">
+              <h3>Select the newsletter you would like to receive</h3>
+
+        <div class="wrapper">
+           
+            <label for="html">HTML News</label>
+            <span> <input type="checkbox" name="type" id="html" value="html"/></span>
+            <div class="clearboth"></div>
+          
+             
+
+        
+            <label for="css">CSS News</label> 
+             <span>   <input type="checkbox" name="type" id="css" value="css"/></span>
+            <div class="clearboth"></div>
+             
+             
+            <label for="javascript">JavascriptNews</label>
+            <span><input type="checkbox" name="type" id="javascript" value="javascript"/></span>
+            <div class="clearboth"></div>
+
+        </div>
+           
+
+            <h3>Newsletter Format</h3>
+
+            <div class="wrapper">
+               <label for="javascript">HTML</label>
+              <span><input type="radio" name="format" value="HTML" checked></span>
+              <div class="clearboth"></div>
+
+
+               <label for="javascript">PlainText</label>
+               <span><input type="radio" name="format" value="Plain Text"></span>
+              <div class="clearboth"></div>
+
+          </div>
+
+
+         <div class="textBox">
+            <label for="textarea" id="text"><h3> Other topics you'd like to hear about</h3></label>
+
+           <textarea id="textarea" name="area">
+            </textarea>
           </div>
 
          
 
-
-
-      
-
-
-    <form>
-
-                 <fieldset>
-              <legend></legend>
-
-                    <h1>Contact Information</h1>
-
-                              <label for="fullName">Full Name</label>
-
-                            <input type="text" id="fullName" name="name" placeholder="Required" required>
-
-                             <label for="email">Email Address</label>
-
-                            <input type="email" id="email" name="email" placeholder="Required" required>
-
-                             <label for="phone">Phone Number</label>
-
-                            <input type="tel" id="phone" name="phone">
-
-                             <label for="street">Street Address</label>
-
-                            <input type="text" id="street" name="street">
-
-                             <label for="city">City</label>
-
-                            <input type="text" id="city" name="city">
-
-                            <label for="state">State</label>
-
-                            <select id="state" name="states">
-                               <option value=""  disabled hidden>Choose State.</option>
-                              <option value="Utah">Utah</option>
-                              <option value="Oregon">Oregon</option>
-                              <option value="Wyoming">Wyoming</option>
-                            </select>
-
-
-
-                             <label for="zip">Zip Code</label><br>
-
-                            <input type="text" id="zip" name="zip">
-
-               </fieldset>
-
-     <fieldset>
-
-
-
-
-              <legend></legend>
-
-              <div id="newsletter">
-
-
-                <h1>Newsletter</h1>
-
-
-                <h3>Select the newsletter you would like to receive</h3>
-
-            <input type="checkbox" name="type" value="html">HTML News<br>
-            <input type="checkbox" name="type" value="css"> CSS News<br>
-             <input type="checkbox" name="type" value="javascript"> Javascript News<br>
-
-            <h3>Newsletter Format</h3>
-
-
-            <input type="radio" name="format" value="HTML" checked> HTML<br>
-            <input type="radio" name="format" value="Plain Text"> Plain Text<br>
-            
-
-
-          <h3>Other topics you'd like to hear about</h3>
-
-          <label for="textarea"></label><textarea id="textarea" name="area">
-            
-
-          </textarea>
-
-              
-
-              
           <input type="submit" value="Sign Up">
               
-
           <h3 id="copyright"><i>Copyright The Code Review</i></h3>
 
-          </div>
+        </div>
     
-      </fieldset>
+    </fieldset>
     
   </form>
 
@@ -126,16 +114,6 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
 </body>
+
 </html>

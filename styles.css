@@ -46,12 +46,21 @@ h1{
 
 fieldset{
     border:none;
-    border-top: 4px solid black;
+   
 }
+legend{
+     border-top: 4px solid black;
+     width:100%;
+     padding:20px 0px;
+     font-size:1.5em;
+     font-weight: bold;
+}
+
 
 #newsletter h3{
     color:lightgray;
     padding:10px 0;
+    clear:both;
 }
 
 
@@ -138,6 +147,10 @@ textarea{
 
 }
 
+textarea:focus{
+    background-color:lightblue;
+}
+
 input[type=submit] {
     background-color: teal;
     color: white;
@@ -155,12 +168,42 @@ input[type=submit] {
     text-align: center;
 }
 
+input[type=radio]{
+    float:left;
+     
+}
+
+
+
+
+div.wrapper { float:left;}
+div.wrapper label { float: right; width: 75%; text-align: left;  }
+div.wrapper span { float: left; width: 20%; text-align: left; }
+div.clearboth { clear: both }
+
+.textBox{
+    margin-top:40px;
+    padding-top: 10px;
+}
+
+.textBox label{
+    width:100%;
+}
+
+
+/* Media Query */
 
 @media only screen and (min-width: 768px) {
     .container{
         width:60%;
         margin:0px auto;
     }
+
+    div.wrapper { float:left;}
+div.wrapper label { float: right; width: 85%; text-align: left;  }
+div.wrapper span { float: left; width: 10%; text-align: left; margin-top:10px; }
+div.clearboth { clear: both }
+
 
     label{ float: left; 
         width: 100px;
@@ -171,7 +214,7 @@ input[type=submit] {
 
     }
 
-
+   
 
     input[type=text], select, textarea {
     width: 80%; 
