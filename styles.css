@@ -184,10 +184,17 @@ div.clearboth { clear: both }
 .textBox{
     margin-top:40px;
     padding-top: 10px;
+     color: lightgray;
+   
 }
 
 .textBox label{
     width:100%;
+     color: lightgray;
+     font-size: 1.25em;
+     font-weight: bold;
+     padding:20px 0px;
+   
 }
 
 
